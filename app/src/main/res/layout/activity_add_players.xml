@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundblurred"
+    tools:context=".AddPlayersActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Players Names"
+        android:textSize="18sp"
+        android:fontFamily="@font/batmfa__"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/dark_blue"
+        android:gravity="center_vertical"
+        >
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/crossirr"
+        android:adjustViewBounds="true"
+        />
+    <EditText
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/playerOneName"
+        android:hint="Player One"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/dark_blue"
+        android:textColorHint="@color/light_white"
+        android:textColor="#FFFFFF"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/dark_blue"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/zeroirrchange"
+            android:adjustViewBounds="true"
+            />
+        <EditText
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/playerTwoName"
+            android:hint="Player Two"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/dark_blue"
+            android:textColorHint="@color/light_white"
+            android:textColor="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Start"
+        android:text="Play Game"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/round_back_yellow"
+        />
+
+
+
+</LinearLayout>
